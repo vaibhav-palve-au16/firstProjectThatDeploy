@@ -5,6 +5,6 @@ app.get('/',(req, res)=>{
     res.end('hello sir')
 })
 
-app.listen( 3000 ,(req,res)=>{
+app.listen(process.env.PORT || 3000 ,(req,res)=>{
     console.log('http://localhost:3000')
 })
